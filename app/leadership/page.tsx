@@ -20,12 +20,11 @@ export default function LeadershipPage() {
         {/* Sarpanch Card */}
         <div className="card">
           <div className="flex items-center space-x-4 mb-4">
-            <div className="w-20 h-20 rounded-full overflow-hidden bg-earth-200 flex-shrink-0">
+            <div className="relative w-20 h-20 rounded-full overflow-hidden bg-earth-200 flex-shrink-0">
               <Image
-                src="/placeholders/sarpanch1.png"
+                src="/photos/sarpanch.png"
                 alt={data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"].name}
-                width={80}
-                height={80}
+                fill
                 className="object-cover"
                 unoptimized
               />
@@ -47,12 +46,11 @@ export default function LeadershipPage() {
         {/* Acting Leader Card */}
         <div className="card">
           <div className="flex items-center space-x-4 mb-4">
-            <div className="w-20 h-20 rounded-full overflow-hidden bg-earth-200 flex-shrink-0">
+            <div className="relative w-20 h-20 rounded-full overflow-hidden bg-earth-200 flex-shrink-0">
               <Image
-                src="/placeholders/leader1.png"
+                src="/photos/sarpanchhusband.png"
                 alt={data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"].name}
-                width={80}
-                height={80}
+                fill
                 className="object-cover"
                 unoptimized
               />

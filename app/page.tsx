@@ -11,9 +11,8 @@ export default function HomePage() {
   const data = getData();
   const [weatherModalOpen, setWeatherModalOpen] = useState(false);
 
-  // TODO: Replace placeholder images with actual village photos
-  const sarpanchPhoto = "/placeholders/sarpanch1.png";
-  const villagePhoto = "/placeholders/village1.png";
+  const sarpanchPhoto = "/photos/sarpanch.png";
+  const sarpanchHusbandPhoto = "/photos/sarpanchhusband.png";
 
   // Approximate coordinates for Somarampet, Illanthakunta
   // TODO: Update with exact coordinates
@@ -23,8 +22,18 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-500 to-primary-700 text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/photos/background.png"
+            alt="Background"
+            fill
+            className="object-cover"
+            priority
+            unoptimized
+          />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4" lang={lang}>
@@ -63,8 +72,8 @@ export default function HomePage() {
               <div className="absolute right-0 top-8">
                 <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl mb-3">
                   <Image
-                    src={villagePhoto}
-                    alt={getText("village", lang)}
+                    src={sarpanchHusbandPhoto}
+                    alt="Sarpanch Husband"
                     fill
                     className="object-cover"
                     unoptimized
