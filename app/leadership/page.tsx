@@ -23,7 +23,7 @@ export default function LeadershipPage() {
             <div className="w-20 h-20 rounded-full overflow-hidden bg-earth-200 flex-shrink-0">
               <Image
                 src="/placeholders/sarpanch1.png"
-                alt={getNestedText(data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"], lang).name}
+                alt={data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"].name}
                 width={80}
                 height={80}
                 className="object-cover"
@@ -32,15 +32,15 @@ export default function LeadershipPage() {
             </div>
             <div>
               <h2 className="text-xl font-bold text-earth-900" lang={lang}>
-                {getNestedText(data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"], lang).title}
+                {data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"].title}
               </h2>
               <p className="text-earth-700" lang={lang}>
-                {getNestedText(data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"], lang).name}
+                {data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"].name}
               </p>
             </div>
           </div>
           <p className="text-earth-700 leading-relaxed" lang={lang}>
-            {getNestedText(data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"], lang).message}
+            {data.leadershipPage[lang === "te" ? "sarpanchCard_te" : "sarpanchCard_en"].message}
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function LeadershipPage() {
             <div className="w-20 h-20 rounded-full overflow-hidden bg-earth-200 flex-shrink-0">
               <Image
                 src="/placeholders/leader1.png"
-                alt={getNestedText(data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"], lang).name}
+                alt={data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"].name}
                 width={80}
                 height={80}
                 className="object-cover"
@@ -59,15 +59,15 @@ export default function LeadershipPage() {
             </div>
             <div>
               <h2 className="text-xl font-bold text-earth-900" lang={lang}>
-                {getNestedText(data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"], lang).title}
+                {data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"].title}
               </h2>
               <p className="text-earth-700" lang={lang}>
-                {getNestedText(data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"], lang).name}
+                {data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"].name}
               </p>
             </div>
           </div>
           <p className="text-earth-700 leading-relaxed" lang={lang}>
-            {getNestedText(data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"], lang).desc}
+            {data.leadershipPage[lang === "te" ? "actingCard_te" : "actingCard_en"].desc}
           </p>
         </div>
       </div>

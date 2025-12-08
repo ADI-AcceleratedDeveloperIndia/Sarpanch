@@ -177,6 +177,8 @@
     "thankYou_te": "ధన్యవాదాలు! 48 గంటల్లో మేము జవాబు ఇస్తాం.",
     "location_en": "Location",
     "location_te": "స్థానం",
+    "mapEmbed": "GOOGLE_MAPS_EMBED_PLACEHOLDER",
+    "mapSearch": "https://www.google.com/maps/search/?api=1&query=Somarampet+Illanthakunta",
     "mapPlaceholder_en": "Map placeholder — update mapEmbed in data/somaram-pet.json",
     "mapPlaceholder_te": "మ్యాప్ ప్లేస్‌హోల్డర్ — data/somaram-pet.json లో mapEmbed మార్చండి",
     "formPlaceholder_en": "Send a message — we will reply within 48 hours.",

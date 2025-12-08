@@ -30,17 +30,17 @@ export default function WorksPage() {
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-earth-200">
                 <Image
                   src={work.image}
-                  alt={getNestedText(work.title, lang)}
+                  alt={lang === "te" ? work.title_te : work.title_en}
                   fill
                   className="object-cover"
                   unoptimized
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-earth-900" lang={lang}>
-                {getNestedText(work.title, lang)}
+                {lang === "te" ? work.title_te : work.title_en}
               </h3>
               <p className="text-earth-700" lang={lang}>
-                {getNestedText(work.desc, lang)}
+                {lang === "te" ? work.desc_te : work.desc_en}
               </p>
             </div>
           ))}
@@ -58,17 +58,17 @@ export default function WorksPage() {
               <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-earth-200">
                 <Image
                   src={work.image}
-                  alt={getNestedText(work.title, lang)}
+                  alt={lang === "te" ? work.title_te : work.title_en}
                   fill
                   className="object-cover"
                   unoptimized
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-earth-900" lang={lang}>
-                {getNestedText(work.title, lang)}
+                {lang === "te" ? work.title_te : work.title_en}
               </h3>
               <p className="text-earth-700" lang={lang}>
-                {getNestedText(work.desc, lang)}
+                {lang === "te" ? work.desc_te : work.desc_en}
               </p>
             </div>
           ))}

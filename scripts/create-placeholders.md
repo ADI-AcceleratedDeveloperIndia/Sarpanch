@@ -27,3 +27,4 @@ Replace the placeholder files with actual village photos:
 You can create simple SVG files with village-themed colors and text.
 
 
+

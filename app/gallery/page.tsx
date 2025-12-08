@@ -64,7 +64,7 @@ export default function GalleryPage() {
                   <iframe
                     className="w-full h-full"
                     src={`https://www.youtube.com/embed/${video.youtubeId}`}
-                    title={getNestedText(video.title, lang)}
+                    title={lang === "te" ? video.title_te : video.title_en}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
@@ -75,7 +75,7 @@ export default function GalleryPage() {
                 )}
               </div>
               <h3 className="text-lg font-semibold text-earth-900" lang={lang}>
-                {getNestedText(video.title, lang)}
+                {lang === "te" ? video.title_te : video.title_en}
               </h3>
             </div>
           ))}
