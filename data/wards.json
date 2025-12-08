@@ -1,0 +1,85 @@
+{
+  "wards": [
+    {
+      "id": 1,
+      "memberName_en": "Ward Member 1",
+      "memberName_te": "వార్డు సభ్యుడు 1",
+      "about_en": "Information about Ward 1 will be added here.",
+      "about_te": "వార్డు 1 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward1.png"
+    },
+    {
+      "id": 2,
+      "memberName_en": "Ward Member 2",
+      "memberName_te": "వార్డు సభ్యుడు 2",
+      "about_en": "Information about Ward 2 will be added here.",
+      "about_te": "వార్డు 2 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward2.png"
+    },
+    {
+      "id": 3,
+      "memberName_en": "Ward Member 3",
+      "memberName_te": "వార్డు సభ్యుడు 3",
+      "about_en": "Information about Ward 3 will be added here.",
+      "about_te": "వార్డు 3 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward3.png"
+    },
+    {
+      "id": 4,
+      "memberName_en": "Ward Member 4",
+      "memberName_te": "వార్డు సభ్యుడు 4",
+      "about_en": "Information about Ward 4 will be added here.",
+      "about_te": "వార్డు 4 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward4.png"
+    },
+    {
+      "id": 5,
+      "memberName_en": "Ward Member 5",
+      "memberName_te": "వార్డు సభ్యుడు 5",
+      "about_en": "Information about Ward 5 will be added here.",
+      "about_te": "వార్డు 5 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward5.png"
+    },
+    {
+      "id": 6,
+      "memberName_en": "Ward Member 6",
+      "memberName_te": "వార్డు సభ్యుడు 6",
+      "about_en": "Information about Ward 6 will be added here.",
+      "about_te": "వార్డు 6 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward6.png"
+    },
+    {
+      "id": 7,
+      "memberName_en": "Ward Member 7",
+      "memberName_te": "వార్డు సభ్యుడు 7",
+      "about_en": "Information about Ward 7 will be added here.",
+      "about_te": "వార్డు 7 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward7.png"
+    },
+    {
+      "id": 8,
+      "memberName_en": "Ward Member 8",
+      "memberName_te": "వార్డు సభ్యుడు 8",
+      "about_en": "Information about Ward 8 will be added here.",
+      "about_te": "వార్డు 8 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward8.png"
+    },
+    {
+      "id": 9,
+      "memberName_en": "Ward Member 9",
+      "memberName_te": "వార్డు సభ్యుడు 9",
+      "about_en": "Information about Ward 9 will be added here.",
+      "about_te": "వార్డు 9 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward9.png"
+    },
+    {
+      "id": 10,
+      "memberName_en": "Ward Member 10",
+      "memberName_te": "వార్డు సభ్యుడు 10",
+      "about_en": "Information about Ward 10 will be added here.",
+      "about_te": "వార్డు 10 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
+      "photo": "/placeholders/ward10.png"
+    }
+  ]
+}
+

@@ -1,0 +1,231 @@
+{
+  "siteId": "somaram-pet",
+  "village": { "en": "Somarampet", "te": "సోమారంపేట్" },
+  "mandal": { "en": "Illanthakunta", "te": "ఇల్లంతకుంట" },
+  "meta": {
+    "title_en": "Somarampet — Village Portal (Demo)",
+    "title_te": "సోమారంపేట్ — మా ఊరు (డెమో)",
+    "description_en": "Somarampet — village news, leadership, development updates, gallery and contact.",
+    "description_te": "సోమారంపేట్ — గ్రామ వార్తలు, నాయకత్వం, అభివృద్ధి వివరాలు, ఫోటోలు మరియు సంప్రదింపుల వివరాలు."
+  },
+  "nav": {
+    "home_en": "Home",
+    "home_te": "హోమ్",
+    "lead_en": "Leadership",
+    "lead_te": "నాయకత్వం",
+    "works_en": "Works",
+    "works_te": "పనులు",
+    "gallery_en": "Gallery",
+    "gallery_te": "గ్యాలరీ",
+    "history_en": "History",
+    "history_te": "చరిత్ర",
+    "announce_en": "Announcements",
+    "announce_te": "ప్రకటనలు",
+    "contact_en": "Contact",
+    "contact_te": "సంప్రదింపు",
+    "index_en": "All Villages Index",
+    "index_te": "అన్ని గ్రామాల జాబితా",
+    "weather_en": "Weather Details",
+    "weather_te": "వాతావరణ వివరాలు"
+  },
+  "hero": {
+    "title_en": "Somarampet — Our Village, Our Pride",
+    "title_te": "సోమారంపేట్ — మన ఊరు, మన గౌరవం",
+    "subtitle_en": "Welcome to the Somarampet community portal — news, updates and stories from our people.",
+    "subtitle_te": "సోమారంపేట్ కమ్యూనిటీ పోర్టల్‌కు స్వాగతం — మా ఊరి వార్తలు, పనుల నవీకరణలు మరియు ప్రజల కథలు.",
+    "sarpanch": {
+      "name_en": "Sarpanch [Name]",
+      "name_te": "సర్పంచ్ [పేరు]",
+      "message_en": "I am honored to serve Somarampet. Please reach out with your suggestions and concerns.",
+      "message_te": "సోమారంపేట్‌కు సేవ చేయడం నాకు గౌరవం. సూచనలు, సమస్యలు వుంటే చెప్పండి."
+    },
+    "actingLeader": {
+      "name_en": "Village Guide [Name]",
+      "name_te": "గ్రామ మార్గదర్శి [పేరు]"
+    },
+    "quickStats_en": "Population: 1,800 • Households: 420 • Wards: 10",
+    "quickStats_te": "జనాభా: 1,800 • ఇళ్లు: 420 • వార్డులు: 10"
+  },
+  "homeContent": {
+    "intro_en": "Somarampet is a close-knit community with strong traditions. This site shares village news, development updates and contact information for the Panchayat leaders.",
+    "intro_te": "సోమారంపేట్ ఒక కలిసికట్టైన ఊరు. ఈ సైట్ లో గ్రామ వార్తలు, అభివృద్ధి వివరాలు మరియు సర్పంచ్/వార్డు సభ్యుల సంప్రదింపులు ఉంటాయి.",
+    "mapCta_en": "Locate Somarampet on Google Maps",
+    "mapCta_te": "సోమారంపేట్‌ని Google మ్యాప్స్‌లో చూడండి"
+  },
+  "leadershipPage": {
+    "pageTitle_en": "Village Leadership",
+    "pageTitle_te": "గ్రామ నాయకత్వం",
+    "sarpanchCard_en": {
+      "title": "Sarpanch",
+      "name": "Sarpanch [Name]",
+      "message": "I will work for our village's progress. Contact me for local issues and ideas."
+    },
+    "sarpanchCard_te": {
+      "title": "సర్పంచ్",
+      "name": "సర్పంచ్ [పేరు]",
+      "message": "మన ఊరు అభివృద్ధికి నేను పని చేస్తాను. సమస్యలు, సూచనలు ఉంటే సంప్రదించండి."
+    },
+    "actingCard_en": {
+      "title": "Acting Leader",
+      "name": "Village Guide [Name]",
+      "desc": "Popular local contact for immediate help."
+    },
+    "actingCard_te": {
+      "title": "గ్రామ మార్గదర్శి",
+      "name": "గ్రామ మార్గదర్శి [పేరు]",
+      "desc": "ఎప్పుడైనా వెంటనే సహాయం కోసం సంప్రదించుకునే వ్యక్తి."
+    },
+    "wardIntro_en": "Click a ward member to view profile and contact.",
+    "wardIntro_te": "వార్డు సభ్యులపై ట్యాప్ చేసి ప్రొఫైల్ మరియు సంప్రదింపు చూడండి.",
+    "wardMembers_en": "Ward Members",
+    "wardMembers_te": "వార్డు సభ్యులు",
+    "wardNumber_en": "Ward {number}",
+    "wardNumber_te": "వార్డు {number}"
+  },
+  "worksPage": {
+    "pageTitle_en": "Development Works",
+    "pageTitle_te": "అభివృద్ధి పనులు",
+    "intro_en": "This page lists ongoing and completed projects in Somarampet — roads, water, sanitation, and school improvements. We update progress regularly.",
+    "intro_te": "ఈ పేజీలో సోమారంపేట్‌లో జరుగుతున్న మరియు పూర్తైన పనులు చూపిస్తాం — రహదారులు, నీటి పనులు, శౌచాలయాలు, పాఠశాల పనులు. పనుల ప్రగతిని ఇక్కడ అప్‌డేట్ చేస్తాం.",
+    "ongoingWorks_en": "Ongoing Works",
+    "ongoingWorks_te": "జరుగుతున్న పనులు",
+    "completedWorks_en": "Completed Works",
+    "completedWorks_te": "పూర్తయిన పనులు",
+    "ongoing": [
+      {
+        "title_en": "BT Road to Main Junction",
+        "title_te": "మెయిన్ జంక్షన్‌కు బీటి రోడ్",
+        "desc_en": "Work started 12 Aug 2025. Estimated completion: 90 days.",
+        "desc_te": "పని ప్రారంభం: 12 ఆగస్టు 2025. పూర్తికావడానికి సుమారు 90 రోజులు.",
+        "image": "/placeholders/work1.png"
+      }
+    ],
+    "completed": [
+      {
+        "title_en": "East Street Borewell",
+        "title_te": "ఈస్ట్ వీధి బోర్‌వెల్",
+        "desc_en": "Completed June 2024.",
+        "desc_te": "జూన్ 2024లో పూర్తి.",
+        "image": "/placeholders/work2.png"
+      }
+    ],
+    "reportIssue_en": "Report an issue or request a work via WhatsApp.",
+    "reportIssue_te": "సమస్యలు లేదా పనుల అభ్యర్థన కోసం వాట్సాప్‌లో చెప్పండి."
+  },
+  "galleryPage": {
+    "pageTitle_en": "Photo & Video Gallery",
+    "pageTitle_te": "ఫోటోలు & వీడియోలు",
+    "intro_en": "A visual tour of Somarampet — festivals, people, schools and development activities.",
+    "intro_te": "సోమారంపేట్ యొక్క విజువల్ టూర్ — పండుగలు, ప్రజలు, పాఠశాలలు మరియు అభివృద్ధి కార్యక్రమాలు.",
+    "photos_en": "Photos",
+    "photos_te": "ఫోటోలు",
+    "videos_en": "Videos",
+    "videos_te": "వీడియోలు",
+    "photoCaptions_en": ["Village Entrance", "Annual Sankranti Festival", "School Renovation"],
+    "photoCaptions_te": ["గ్రామ ప్రవేశ ద్వారం", "సంక్రాంతి ఉత్సవం", "పాఠశాల మరమ్మతు"],
+    "videoCaptions_en": ["Sarpanch message on Swachh Bharat", "Youth Sports Day"],
+    "videoCaptions_te": ["స్వచ్ఛ భారత్ పై సర్పంచ్ సందేశం", "యువత క్రీడా దినం"],
+    "galleryPhotoFallback_en": "Gallery photo {number}",
+    "galleryPhotoFallback_te": "గ్యాలరీ ఫొటో {number}",
+    "youtubePlaceholder_en": "YouTube Video Placeholder",
+    "youtubePlaceholder_te": "యూట్యూబ్ వీడియో ప్లేస్‌హోల్డర్"
+  },
+  "historyPage": {
+    "pageTitle_en": "History & Culture",
+    "pageTitle_te": "చరిత్ర & సంస్కృతి",
+    "content_en": "Somarampet has deep traditions. Our festivals, temples and farming heritage have shaped village life for generations. We celebrate Sankranti, local temple festivals and community events every year.",
+    "content_te": "సోమారంపేట్‌కు పాత సంప్రదాయాలు ఉన్నవి. సంక్రాంతి, స్థానిక ఆలయ పండుగలు మరియు వ్యవసాయ వారసత్వం వల్ల గ్రామ జీవితం రూపొందినది. ప్రతి సంవత్సరం పండుగలు మరియు సంఘ కార్యక్రమాలు జరుపుకుంటాము."
+  },
+  "announcementsPage": {
+    "pageTitle_en": "Announcements & Notices",
+    "pageTitle_te": "ప్రకటనలు",
+    "intro_en": "Latest community announcements, Gram Sabha notices, health camps and festival schedules.",
+    "intro_te": "తాజా గ్రామ ప్రకటనలు, గ్రామ సభ నోటీసులు, ఆరోగ్య శిబిరాలు మరియు పండుగ షెడ్యూల్స్ ఇక్కడ ఉంటాయి.",
+    "items": [
+      {
+        "en": "Gram Sabha on 10 Dec 2025 at 10:00 AM — Agenda: Street lighting and water plan.",
+        "te": "గ్రామ సభ: 10 డిసెంబర్ 2025, ఉదయం 10:00 — ఆజెండా: వీధి దీపాలు & నీటి ప్రణాళిక."
+      },
+      {
+        "en": "Free medical camp on 18 Dec 2025 at Village Hall.",
+        "te": "డిసెంబర్ 18, 2025 — గ్రామ హాల్లో ఉచిత వైద్య శిబిరం."
+      }
+    ],
+    "cta_en": "Want to post a notice? Contact the Panchayat office via WhatsApp.",
+    "cta_te": "ప్రకటన పెట్టాలనుకుంటే పంచాయతీ కార్యాలయంతో వాట్సాప్ ద్వారా మాట్లాడండి."
+  },
+  "contactPage": {
+    "pageTitle_en": "Contact Us",
+    "pageTitle_te": "సంప్రదింపు",
+    "contactInformation_en": "Contact Information",
+    "contactInformation_te": "సంప్రదింపు వివరాలు",
+    "sarpanch_en": "Sarpanch: [Name]",
+    "sarpanch_te": "సర్పంచ్: [పేరు]",
+    "whatsapp_en": "WhatsApp / Phone: +91 95050 09699",
+    "whatsapp_te": "వాట్సాప్ / ఫోన్: +91 95050 09699",
+    "officeHours_en": "Office Hours: 10:00 AM – 4:00 PM (Mon–Sat)",
+    "officeHours_te": "కార్యాలయ సమయం: ఉదయం 10 – సాయంత్రం 4 (సోమ–శని)",
+    "sendMessage_en": "Send a Message",
+    "sendMessage_te": "సందేశం పంపండి",
+    "name_en": "Name",
+    "name_te": "పేరు",
+    "message_en": "Message",
+    "message_te": "సందేశం",
+    "sendMessageButton_en": "Send Message",
+    "sendMessageButton_te": "పంపండి",
+    "thankYou_en": "Thank you! We will reply within 48 hours.",
+    "thankYou_te": "ధన్యవాదాలు! 48 గంటల్లో మేము జవాబు ఇస్తాం.",
+    "location_en": "Location",
+    "location_te": "స్థానం",
+    "mapPlaceholder_en": "Map placeholder — update mapEmbed in data/somaram-pet.json",
+    "mapPlaceholder_te": "మ్యాప్ ప్లేస్‌హోల్డర్ — data/somaram-pet.json లో mapEmbed మార్చండి",
+    "formPlaceholder_en": "Send a message — we will reply within 48 hours.",
+    "formPlaceholder_te": "సందేశం పంపండి — 48 గంటల్లో ప్రతిస్పందిస్తాం."
+  },
+  "footer": {
+    "line_en": "Built by",
+    "line_te": "తయారు చేసినది",
+    "logoAlt_en": "AI Developer India",
+    "logoAlt_te": "AI Developer India"
+  },
+  "weather": {
+    "button_en": "Weather Details",
+    "button_te": "వాతావరణ వివరాలు",
+    "loading_en": "Loading weather details…",
+    "loading_te": "వాతావరణ సమాచారం తెస్తున్నాం…",
+    "current_en": "Current conditions",
+    "current_te": "ఇప్పటి పరిస్థితి",
+    "hourly_en": "Hourly forecast",
+    "hourly_te": "గంట గంటకు పరిస్థితి",
+    "weekly_en": "7-day forecast",
+    "weekly_te": "ఇంకో వారం వాతావరణం",
+    "humidity_en": "Humidity",
+    "humidity_te": "తేమ",
+    "wind_en": "Wind",
+    "wind_te": "గాలి బలం",
+    "advisoryLightRain_en": "Light rain expected this afternoon — carry an umbrella.",
+    "advisoryLightRain_te": "మధ్యాహ్నం కొద్దిగా వర్షం ఉండొచ్చు — గొడ్డలితో బయలుదేరండి."
+  },
+  "indexButton": {
+    "text_en": "All Villages Index (By Mandal)",
+    "text_te": "అన్ని గ్రామాల జాబితా (మండల వారీగా)",
+    "micro_en": "Explore other village portals by Mandal and Village.",
+    "micro_te": "మండలాలు మరియు గ్రామాల వారీగా ఇతర గ్రామ పోర్టల్స్‌ను చూడండి."
+  },
+  "placeholders": {
+    "photos": ["/placeholders/photo1.png", "/placeholders/photo2.png"],
+    "videos": [
+      {
+        "title_en": "Palle Pragathi Update",
+        "title_te": "పల్లె ప్రగతి అప్‌డేట్",
+        "youtubeId": "YOUTUBE_ID_1"
+      }
+    ]
+  },
+  "common": {
+    "close_en": "Close",
+    "close_te": "మూసేయండి",
+    "ariaClose_en": "Close",
+    "ariaClose_te": "మూసేయండి"
+  }
+}

@@ -1,0 +1,6 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#8B7355"/>
+  <text x="50%" y="45%" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">Gallery Photo 2</text>
+  <text x="50%" y="55%" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">Photo Placeholder</text>
+</svg>
+

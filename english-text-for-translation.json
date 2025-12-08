@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "description": "All English text from Somaram Pet village website - ready for Telugu translation",
+    "instructions": "Please provide natural Telugu translations (not literal) for each English text. Use simple, village-style Telugu phrasing.",
+    "format": "Each key corresponds to the JSON path in data/somaram-pet.json"
+  },
+  
+  "meta": {
+    "title": "Somaram Pet — Village Portal (Demo)",
+    "description": "Somaram Pet — village news, leadership, development updates, gallery and contact."
+  },
+  
+  "navigation": {
+    "home": "Home",
+    "leadership": "Leadership",
+    "works": "Works",
+    "gallery": "Gallery",
+    "history": "History",
+    "announcements": "Announcements",
+    "contact": "Contact",
+    "allVillagesIndex": "All Villages Index",
+    "weatherDetails": "Weather Details"
+  },
+  
+  "hero": {
+    "title": "Somaram Pet — Our Village, Our Pride",
+    "subtitle": "Welcome to the Somaram Pet community portal — news, updates and stories from our people.",
+    "sarpanchName": "Sarpanch [Name]",
+    "sarpanchMessage": "I am honored to serve Somaram Pet. Please reach out with your suggestions and concerns.",
+    "actingLeaderName": "Village Guide [Name]",
+    "quickStats": "Population: 1,800 • Households: 420 • Wards: 10"
+  },
+  
+  "homeContent": {
+    "intro": "Somaram Pet is a close-knit community with strong traditions. This site shares village news, development updates and contact information for the Panchayat leaders.",
+    "mapCta": "Locate Somaram Pet on Google Maps"
+  },
+  
+  "leadershipPage": {
+    "pageTitle": "Village Leadership",
+    "sarpanchCard": {
+      "title": "Sarpanch",
+      "name": "Sarpanch [Name]",
+      "message": "I will work for our village's progress. Contact me for local issues and ideas."
+    },
+    "actingCard": {
+      "title": "Acting Leader",
+      "name": "Village Guide [Name]",
+      "desc": "Popular local contact for immediate help."
+    },
+    "wardIntro": "Click a ward member to view profile and contact.",
+    "wardMembers": "Ward Members",
+    "wardNumber": "Ward {number}"
+  },
+  
+  "worksPage": {
+    "pageTitle": "Development Works",
+    "intro": "This page lists ongoing and completed projects in Somaram Pet — roads, water, sanitation, and school improvements. We update progress regularly.",
+    "ongoingWorks": "Ongoing Works",
+    "completedWorks": "Completed Works",
+    "ongoing": [
+      {
+        "title": "BT Road to Main Junction",
+        "desc": "Work started 12 Aug 2025. Estimated completion: 90 days."
+      }
+    ],
+    "completed": [
+      {
+        "title": "East Street Borewell",
+        "desc": "Completed June 2024."
+      }
+    ],
+    "reportIssue": "Report an issue or request a work via WhatsApp."
+  },
+  
+  "galleryPage": {
+    "pageTitle": "Photo & Video Gallery",
+    "intro": "A visual tour of Somaram Pet — festivals, people, schools and development activities.",
+    "photos": "Photos",
+    "videos": "Videos",
+    "photoCaptions": [
+      "Village Entrance",
+      "Annual Sankranti Festival",
+      "School Renovation"
+    ],
+    "videoCaptions": [
+      "Sarpanch message on Swachh Bharat",
+      "Youth Sports Day"
+    ],
+    "galleryPhotoFallback": "Gallery photo {number}",
+    "youtubePlaceholder": "YouTube Video Placeholder"
+  },
+  
+  "historyPage": {
+    "pageTitle": "History & Culture",
+    "content": "Somaram Pet has deep traditions. Our festivals, temples and farming heritage have shaped village life for generations. We celebrate Sankranti, local temple festivals and community events every year."
+  },
+  
+  "announcementsPage": {
+    "pageTitle": "Announcements & Notices",
+    "intro": "Latest community announcements, Gram Sabha notices, health camps and festival schedules.",
+    "items": [
+      {
+        "text": "Gram Sabha on 10 Dec 2025 at 10:00 AM — Agenda: Street lighting and water plan."
+      },
+      {
+        "text": "Free medical camp on 18 Dec 2025 at Village Hall."
+      }
+    ],
+    "cta": "Want to post a notice? Contact the Panchayat office via WhatsApp."
+  },
+  
+  "contactPage": {
+    "pageTitle": "Contact Us",
+    "contactInformation": "Contact Information",
+    "sarpanch": "Sarpanch: [Name]",
+    "whatsapp": "WhatsApp / Phone: +91 95050 09699",
+    "officeHours": "Office Hours: 10:00 AM – 4:00 PM (Mon–Sat)",
+    "sendMessage": "Send a Message",
+    "name": "Name",
+    "message": "Message",
+    "sendMessageButton": "Send Message",
+    "thankYou": "Thank you! We will reply within 48 hours.",
+    "location": "Location",
+    "mapPlaceholder": "Map placeholder — update mapEmbed in data/somaram-pet.json",
+    "formPlaceholder": "Send a message — we will reply within 48 hours."
+  },
+  
+  "footer": {
+    "line": "Somaram Pet Digital Portal (Demo) • Built with care • Contact: +91 95050 09699"
+  },
+  
+  "weather": {
+    "button": "Weather Details",
+    "loading": "Loading weather details…",
+    "current": "Current conditions",
+    "hourly": "Hourly forecast",
+    "weekly": "7-day forecast",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "advisoryLightRain": "Light rain expected this afternoon — carry an umbrella."
+  },
+  
+  "indexButton": {
+    "text": "All Villages Index (By Mandal)",
+    "micro": "Explore other village portals by Mandal and Village."
+  },
+  
+  "placeholders": {
+    "videos": [
+      {
+        "title": "Palle Pragathi Update"
+      }
+    ]
+  },
+  
+  "common": {
+    "close": "Close",
+    "ariaClose": "Close"
+  }
+}
+
