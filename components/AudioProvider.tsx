@@ -32,7 +32,13 @@ export function AudioProvider({ children }: { children: ReactNode }) {
 
       // When first audio ends, play second audio
       const handleFirstAudioEnd = () => {
+        // Make sure first audio is stopped
+        if (firstAudioRef.current) {
+          firstAudioRef.current.pause();
+        }
+        // Now play the second audio
         if (secondAudioRef.current) {
+          secondAudioRef.current.currentTime = 0; // Start from beginning
           secondAudioRef.current.play().catch((error) => {
             console.log("Second audio play failed:", error);
           });
@@ -48,15 +54,16 @@ export function AudioProvider({ children }: { children: ReactNode }) {
         setIsPlaying(true);
         // Check if first audio has already ended (then play second)
         firstAudio.addEventListener("loadedmetadata", () => {
-          if (firstAudio.currentTime >= firstAudio.duration - 0.1) {
+          if (firstAudio.currentTime >= firstAudio.duration - 0.1 || firstAudio.ended) {
             // First audio already finished, play second audio
             if (secondAudioRef.current) {
+              secondAudioRef.current.currentTime = 0; // Start from beginning
               secondAudioRef.current.play().catch((error) => {
                 console.log("Second audio autoplay prevented:", error);
               });
             }
           } else {
-            // First audio hasn't finished, resume it
+            // First audio hasn't finished, resume it (don't play second audio yet)
             firstAudio.play().catch((error) => {
               console.log("Audio autoplay prevented:", error);
             });
@@ -86,9 +93,12 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     }
     
     if (firstAudioRef.current) {
+      // Stop first audio if it's playing
+      firstAudioRef.current.pause();
       // Reset first audio to beginning
       firstAudioRef.current.currentTime = 0;
       
+      // Play only the first audio - second will start automatically when first ends
       firstAudioRef.current
         .play()
         .then(() => {
@@ -127,11 +137,18 @@ export function AudioProvider({ children }: { children: ReactNode }) {
           });
         }
       }
-      // If second audio is paused, resume it (it should be looping)
+      // Only resume second audio if first audio has completely finished
       if (secondAudioRef.current && secondAudioRef.current.paused) {
-        secondAudioRef.current.play().catch((error) => {
-          console.log("Second audio resume failed:", error);
-        });
+        // Check if first audio has ended before playing second audio
+        if (firstAudioRef.current) {
+          const firstAudio = firstAudioRef.current;
+          // Only play second audio if first audio has ended (currentTime >= duration - small threshold)
+          if (firstAudio.currentTime >= firstAudio.duration - 0.1 || firstAudio.ended) {
+            secondAudioRef.current.play().catch((error) => {
+              console.log("Second audio resume failed:", error);
+            });
+          }
+        }
       }
     }
   }, [isPlaying]);

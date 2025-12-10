@@ -60,7 +60,16 @@ export default function GalleryPage() {
           {data.placeholders.videos.map((video, idx) => (
             <div key={idx} className="card">
               <div className="relative w-full h-64 bg-earth-200 rounded-lg overflow-hidden mb-4">
-                {video.youtubeId !== "YOUTUBE_ID_1" ? (
+                {video.videoFile ? (
+                  <video
+                    className="w-full h-full object-cover"
+                    controls
+                    preload="metadata"
+                  >
+                    <source src={video.videoFile} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : video.youtubeId && video.youtubeId !== "YOUTUBE_ID_1" ? (
                   <iframe
                     className="w-full h-full"
                     src={`https://www.youtube.com/embed/${video.youtubeId}`}

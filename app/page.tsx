@@ -52,10 +52,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Overlapping circular photos */}
-            <div className="relative h-64 md:h-80 flex items-center justify-center">
-              <div className="relative z-10">
-                <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl mb-3">
+            {/* Side by side circular photos */}
+            <div className="flex items-center justify-start gap-4 sm:gap-6 md:gap-8">
+              <div className="flex flex-col items-center">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-2 sm:border-4 border-white shadow-xl mb-2 sm:mb-3">
                   <Image
                     src={sarpanchPhoto}
                     alt={lang === "te" ? data.hero.sarpanch.name_te : data.hero.sarpanch.name_en}
@@ -65,22 +65,22 @@ export default function HomePage() {
                     unoptimized
                   />
                 </div>
-                <p className="text-sm md:text-base font-semibold text-white text-center" lang={lang}>
+                <p className="text-xs sm:text-sm md:text-base font-semibold text-white text-center whitespace-nowrap" lang={lang}>
                   {lang === "te" ? data.hero.sarpanch.name_te : data.hero.sarpanch.name_en}
                 </p>
               </div>
-              <div className="absolute right-0 top-8">
-                <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl mb-3">
+              <div className="flex flex-col items-center">
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden border-2 sm:border-4 border-white shadow-xl mb-2 sm:mb-3">
                   <Image
                     src={sarpanchHusbandPhoto}
-                    alt="Sarpanch Husband"
+                    alt={lang === "te" ? data.hero.actingLeader.name_te : data.hero.actingLeader.name_en}
                     fill
                     className="object-cover"
                     unoptimized
                   />
                 </div>
-                <p className="text-xs md:text-sm font-semibold text-white text-center" lang={lang}>
-                  {/* Name will be added here later */}
+                <p className="text-xs sm:text-sm md:text-base font-semibold text-white text-center whitespace-nowrap" lang={lang}>
+                  {lang === "te" ? data.hero.actingLeader.name_te : data.hero.actingLeader.name_en}
                 </p>
               </div>
             </div>

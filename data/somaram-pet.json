@@ -33,14 +33,14 @@
     "subtitle_en": "Welcome to the Ramarampeta community portal — news, updates and stories from our people.",
     "subtitle_te": "రామారంపేట కమ్యూనిటీ పోర్టల్‌కు స్వాగతం — మా ఊరి వార్తలు, పనుల నవీకరణలు మరియు ప్రజల కథలు.",
     "sarpanch": {
-      "name_en": "Ramalakshmi",
-      "name_te": "రామలక్ష్మి",
+      "name_en": "Srimathi Ramalakshmi",
+      "name_te": "శ్రీమతి రామలక్ష్మి",
       "message_en": "I am honored to serve Ramarampeta. Please reach out with your suggestions and concerns.",
       "message_te": "రామారంపేట‌కు సేవ చేయడం నాకు గౌరవం. సూచనలు, సమస్యలు వుంటే చెప్పండి."
     },
     "actingLeader": {
-      "name_en": "Ramayya",
-      "name_te": "రామయ్య"
+      "name_en": "Sri Ramayya",
+      "name_te": "శ్రీ రామయ్య"
     },
     "quickStats_en": "Population: 1,800 • Households: 420 • Wards: 10",
     "quickStats_te": "జనాభా: 1,800 • ఇళ్లు: 420 • వార్డులు: 10"
@@ -56,22 +56,22 @@
     "pageTitle_te": "గ్రామ నాయకత్వం",
     "sarpanchCard_en": {
       "title": "Sarpanch",
-      "name": "Ramalakshmi",
+      "name": "Srimathi Ramalakshmi",
       "message": "I will work for our village's progress. Contact me for local issues and ideas."
     },
     "sarpanchCard_te": {
       "title": "సర్పంచ్",
-      "name": "రామలక్ష్మి",
+      "name": "శ్రీమతి రామలక్ష్మి",
       "message": "మన ఊరు అభివృద్ధికి నేను పని చేస్తాను. సమస్యలు, సూచనలు ఉంటే సంప్రదించండి."
     },
     "actingCard_en": {
       "title": "Acting Leader",
-      "name": "Ramayya",
+      "name": "Sri Ramayya",
       "desc": "Popular local contact for immediate help."
     },
     "actingCard_te": {
       "title": "గ్రామ మార్గదర్శి",
-      "name": "రామయ్య",
+      "name": "శ్రీ రామయ్య",
       "desc": "ఎప్పుడైనా వెంటనే సహాయం కోసం సంప్రదించుకునే వ్యక్తి."
     },
     "wardIntro_en": "Click a ward member to view profile and contact.",
@@ -96,7 +96,7 @@
         "title_te": "మెయిన్ జంక్షన్‌కు బీటి రోడ్",
         "desc_en": "Work started 12 Aug 2025. Estimated completion: 90 days.",
         "desc_te": "పని ప్రారంభం: 12 ఆగస్టు 2025. పూర్తికావడానికి సుమారు 90 రోజులు.",
-        "image": "/placeholders/work1.png"
+        "image": "/media/BT Road to Main Junction.png"
       }
     ],
     "completed": [
@@ -105,7 +105,7 @@
         "title_te": "ఈస్ట్ వీధి బోర్‌వెల్",
         "desc_en": "Completed June 2024.",
         "desc_te": "జూన్ 2024లో పూర్తి.",
-        "image": "/placeholders/work2.png"
+        "image": "/media/East Street Borewell.png"
       }
     ],
     "reportIssue_en": "Report an issue or request a work via WhatsApp.",
@@ -158,8 +158,8 @@
     "pageTitle_te": "సంప్రదింపు",
     "contactInformation_en": "Contact Information",
     "contactInformation_te": "సంప్రదింపు వివరాలు",
-    "sarpanch_en": "Sarpanch: [Name]",
-    "sarpanch_te": "సర్పంచ్: రామలక్ష్మి",
+    "sarpanch_en": "Sarpanch: Srimathi Ramalakshmi",
+    "sarpanch_te": "సర్పంచ్: శ్రీమతి రామలక్ష్మి",
     "whatsapp_en": "WhatsApp / Phone: +91 95050 09699",
     "whatsapp_te": "వాట్సాప్ / ఫోన్: +91 95050 09699",
     "officeHours_en": "Office Hours: 10:00 AM – 4:00 PM (Mon–Sat)",
@@ -176,7 +176,7 @@
     "thankYou_te": "ధన్యవాదాలు! 48 గంటల్లో మేము జవాబు ఇస్తాం.",
     "location_en": "Location",
     "location_te": "స్థానం",
-    "mapEmbed": "GOOGLE_MAPS_EMBED_PLACEHOLDER",
+    "mapEmbed": "https://www.google.com/maps?q=Somaram+Pet,+Illanthakunta,+Telangana&output=embed",
     "mapSearch": "https://www.google.com/maps/search/?api=1&query=Ramarampeta",
     "mapPlaceholder_en": "Map placeholder — update mapEmbed in data/somaram-pet.json",
     "mapPlaceholder_te": "మ్యాప్ ప్లేస్‌హోల్డర్ — data/somaram-pet.json లో mapEmbed మార్చండి",
@@ -214,12 +214,16 @@
     "micro_te": "మండలాలు మరియు గ్రామాల వారీగా ఇతర గ్రామ పోర్టల్స్‌ను చూడండి."
   },
   "placeholders": {
-    "photos": ["/placeholders/photo1.png", "/placeholders/photo2.png"],
+    "photos": [
+      "/media/Village Entrance.png",
+      "/media/Annual Sankranti Festival.png"
+    ],
     "videos": [
       {
-        "title_en": "Palle Pragathi Update",
-        "title_te": "పల్లె ప్రగతి అప్‌డేట్",
-        "youtubeId": "YOUTUBE_ID_1"
+        "title_en": "Swacchadanam – Pacchadanam",
+        "title_te": "స్వచ్ఛదనం - పచ్చదనం",
+        "youtubeId": "YOUTUBE_ID_1",
+        "videoFile": "/media/Swacchadanam – Pacchadanam.mp4"
       }
     ]
   },
