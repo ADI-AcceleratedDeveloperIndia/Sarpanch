@@ -1,0 +1,77 @@
+===========================================
+VERCEL ENVIRONMENT VARIABLES - COPY & PASTE
+===========================================
+
+Add these 3 variables in Vercel Dashboard:
+Settings > Environment Variables > Add New
+
+-------------------------------------------
+VARIABLE 1:
+-------------------------------------------
+Key: GOOGLE_SHEETS_CLIENT_EMAIL
+Value: gramasarpanchwebfeedback@gramasarpanchwebfeedback.iam.gserviceaccount.com
+Environment: ☑ Production ☑ Preview ☑ Development
+
+-------------------------------------------
+VARIABLE 2:
+-------------------------------------------
+Key: GOOGLE_SHEETS_SPREADSHEET_ID
+Value: 12J8n_joUGMPbFg9eFXYNaqrDUvz9JJLCeDRGSFBCaL4
+Environment: ☑ Production ☑ Preview ☑ Development
+
+-------------------------------------------
+VARIABLE 3:
+-------------------------------------------
+Key: GOOGLE_SHEETS_PRIVATE_KEY
+Value: -----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDXR6ryfYWZNmkU
+b4EloYbACFq4LKti0BZ6TbHKLEtJhFpx+HCu+7kyv/ZkEwm/5WY6aIPnUbCfEO7f
+QQ5sb5jA+nQ6d5pfrCh72My2n0mRY+E6eS/Wt+u+8NCuaPGaINvabUQo65PsUOnY
+H88fBIV2JZaeR2DyfPn8kmntVvwOR7fgW4p76PBiRqDk5CEzQ795tNRYGBEyApr5
+KhHKMktwIahf7yapl9ZB8j/y7vkOBKobQGVvwDK4zMhbfQWMYE9KN10yU2w/eeOX
+RmVw++qg4QpFPY2NV/ATg9suZE8DN2ILkJX92zBRnyak8UGVCKqVSA9LX6e9LLuQ
+esvzmRi9AgMBAAECggEANSH0GBtQ0Oqz7p5CorYGGvk04sXrmty+33qzibF6928a
+H4zwys9H+zWTq0ljm6ATphDLlVj9HZVBT4qv86Vrbx2heBiy2jAUYdS1WdFgh+i9
+2v+0Beuo3Jx09Mbj8mVvva5AJ1VVUfr6bCQVq5MjGXDXhsMZM2ATFvpP+IsCdMdc
+pr+CPTWb3Iqw/CJGutSNihy0Ec4UJFDkmxV2F0td9CL99YZa9x7oPkCruEWnlOka
+/GAEV1CSDY4g58jynjDrPBxRsdFK7deRzusJS5+szpWc8a/31WKCBa0fG0QIEn4x
+Ujd5F6DyW/gBFlINsSbhLKfHTt64JaCxmeOCMZ0zgQKBgQD1AIiAYK9xbGCXSIQ8
+yohVkby4Ia5B3UDSW9b+J/ZJ42/+bsfD02mOG4b6LmBB62FXgLWyrtV2/ELU0Z2X
+BcSG52klu4JjCLph3Cc/rJUZan0918IKxqiyxN7UysGK+d26WtWXS+BXUf6opPlu
+pu9XjdqBNHzRiMCZx6pkZWsgXQKBgQDg8ZRhid9wllvUKoseHL4hTDJx/HwLFlG/
+DjNrjlUuxl45En8DB2eJq78DV95Hi/iNWHLaA82C1jkZqrtTACqZECYTJ7K3Nmxz
+6AZoHnD4piMK2BwRAb6+Ty4zOH1QYZCsGX3uCzIJRZuRsv/pSkwfnWN1Qzd+mPEG
+2onYz4nT4QKBgQDMBpWl0t5HZilJ0mnM9hxypdqyu9mRn97LTw/Ktxyyi2RITZit
+yvCsFuBglx4xxwJZDCZDlrTNUWWWNLk3euYeMbeuZGhAcJRFykAlFmNTtwp05agB
+sU3rEWc/bVmfklTDS8FzLQy1quKXLktJilrmXosH7d3D4E4DwfJziMGdQQKBgDGW
+L5581SutiZqwsjA2J9eRQ4GLJhEPn3+dcspf+vkvs2+jWypgxHs9yALFqPNesLD/
+8XmL4w7XiIjW8Spv2/QX8jzAwI3QyoGWgWsMYtz9SrZGQ5GgL9sl+0pBRqaki07U
+48TI5QPUO2IX8oAL59IEUPt1kNMwhdl77W1E+t4hAoGANCJt7vT3sBEDgvWQcHF/
+F4crZn2x8H4F7QsX/T7v0BBFHFzAE5zFccOAmPsVM96/XpbR2YpRZgTrFMUx0ssF
+wJyyH6w+Bcu8gwQjAVjw5x1tyJJ15j4krdlyT+byJeYyBquP6iOtn4HhRg4iKDBX
+/NIz17LiiO8pq/7BwNaz1sY=
+-----END PRIVATE KEY-----
+Environment: ☑ Production ☑ Preview ☑ Development
+
+===========================================
+IMPORTANT NOTES:
+===========================================
+
+1. Copy the ENTIRE private key including:
+   - -----BEGIN PRIVATE KEY-----
+   - All the lines in between
+   - -----END PRIVATE KEY-----
+
+2. Select ALL THREE environments for each variable:
+   - Production
+   - Preview
+   - Development
+
+3. After adding all 3 variables, REDEPLOY your site!
+
+4. Don't forget to share your Google Sheet with:
+   gramasarpanchwebfeedback@gramasarpanchwebfeedback.iam.gserviceaccount.com
+   (Give "Editor" permission)
+
+===========================================
+
