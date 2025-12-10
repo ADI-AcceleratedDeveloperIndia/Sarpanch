@@ -17,7 +17,8 @@ interface FeedbackData {
   ideaWork: "yes" | "no" | null;
   reason: string;
   willSupport: "yes" | "no" | null;
-  electionPerson: string;
+  electionKnow: "yes" | "no" | null;
+  contactNumber: string;
   timestamp: string;
 }
 
@@ -72,7 +73,8 @@ export async function saveToGoogleSheets(data: FeedbackData): Promise<void> {
         data.ideaWork || "",
         data.reason || "",
         data.willSupport || "",
-        data.electionPerson || "",
+        data.electionKnow || "",
+        data.contactNumber || "",
       ],
     ];
 

@@ -4,7 +4,7 @@ import { saveToGoogleSheets } from "@/lib/googleSheets";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, ideaWork, reason, willSupport, electionPerson, timestamp } = body;
+    const { name, ideaWork, reason, willSupport, electionKnow, contactNumber, timestamp } = body;
 
     // Log feedback (always)
     console.log("Feedback received:", {
@@ -12,7 +12,8 @@ export async function POST(request: NextRequest) {
       ideaWork,
       reason,
       willSupport,
-      electionPerson,
+      electionKnow,
+      contactNumber,
       timestamp,
     });
 
@@ -23,7 +24,8 @@ export async function POST(request: NextRequest) {
         ideaWork,
         reason,
         willSupport,
-        electionPerson,
+        electionKnow,
+        contactNumber,
         timestamp,
       });
     } catch (sheetsError) {

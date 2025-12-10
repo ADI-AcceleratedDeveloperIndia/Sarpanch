@@ -15,7 +15,8 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
   const [ideaWork, setIdeaWork] = useState<"yes" | "no" | null>(null);
   const [reason, setReason] = useState("");
   const [willSupport, setWillSupport] = useState<"yes" | "no" | null>(null);
-  const [electionPerson, setElectionPerson] = useState("");
+  const [electionKnow, setElectionKnow] = useState<"yes" | "no" | null>(null);
+  const [contactNumber, setContactNumber] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -52,7 +53,8 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
           ideaWork,
           reason: ideaWork === "no" ? reason : "",
           willSupport: ideaWork === "yes" ? willSupport : null,
-          electionPerson,
+          electionKnow,
+          contactNumber: electionKnow === "yes" ? contactNumber : "",
           timestamp: new Date().toISOString(),
         }),
       });
@@ -77,7 +79,8 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
     setIdeaWork(null);
     setReason("");
     setWillSupport(null);
-    setElectionPerson("");
+    setElectionKnow(null);
+    setContactNumber("");
     setSuccess(false);
     setError(null);
     onClose();
@@ -230,18 +233,58 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
 
               {/* Election Question */}
               <div>
-                <label htmlFor="electionPerson" className="block text-sm font-medium text-earth-700 mb-2">
+                <label className="block text-sm font-medium text-earth-700 mb-3">
                   {getText("feedback.electionQuestion", lang)}
                 </label>
-                <input
-                  type="text"
-                  id="electionPerson"
-                  value={electionPerson}
-                  onChange={(e) => setElectionPerson(e.target.value)}
-                  className="w-full px-4 py-2 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                  placeholder={getText("feedback.electionQuestion", lang)}
-                />
+                <div className="flex gap-4">
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="electionKnow"
+                      value="yes"
+                      checked={electionKnow === "yes"}
+                      onChange={(e) => {
+                        setElectionKnow("yes");
+                        setContactNumber("");
+                      }}
+                      className="mr-2"
+                    />
+                    {getText("feedback.yesOption", lang)}
+                  </label>
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="electionKnow"
+                      value="no"
+                      checked={electionKnow === "no"}
+                      onChange={(e) => {
+                        setElectionKnow("no");
+                        setContactNumber("");
+                      }}
+                      className="mr-2"
+                    />
+                    {getText("feedback.noOption", lang)}
+                  </label>
+                </div>
               </div>
+
+              {/* Contact Number (if Yes) */}
+              {electionKnow === "yes" && (
+                <div>
+                  <label htmlFor="contactNumber" className="block text-sm font-medium text-earth-700 mb-2">
+                    {getText("feedback.contactNumberLabel", lang)}
+                  </label>
+                  <input
+                    type="tel"
+                    id="contactNumber"
+                    value={contactNumber}
+                    onChange={(e) => setContactNumber(e.target.value)}
+                    className="w-full px-4 py-2 border border-earth-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    placeholder={getText("feedback.contactNumberPlaceholder", lang)}
+                    required
+                  />
+                </div>
+              )}
 
               {error && (
                 <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
