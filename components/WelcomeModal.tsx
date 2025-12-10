@@ -24,13 +24,8 @@ export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
     if (typeof window !== "undefined" && !window.welcomeModalShown) {
       setIsVisible(true);
       window.welcomeModalShown = true;
-    } else {
-      // If navigating (not refreshing), don't show modal, but resume audio if it was playing
-      const audioPlaying = localStorage.getItem("audioPlaying") === "true";
-      if (audioPlaying) {
-        onEnter();
-      }
     }
+    // Don't auto-start audio when navigating - audio will resume automatically via AudioProvider
 
     // Clear flag on page unload (refresh)
     const handleBeforeUnload = () => {
@@ -52,6 +47,8 @@ export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
   const handleClose = () => {
     setIsVisible(false);
     onClose();
+    // Clear any audio playing state when X is clicked
+    localStorage.setItem("audioPlaying", "false");
   };
 
   useEffect(() => {

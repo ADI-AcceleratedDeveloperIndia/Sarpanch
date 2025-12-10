@@ -42,12 +42,25 @@ export function AudioProvider({ children }: { children: ReactNode }) {
       firstAudio.addEventListener("ended", handleFirstAudioEnd);
 
       // Check if audio should be playing from localStorage
+      // Only auto-resume if user explicitly clicked "Enter" before
       const shouldPlay = localStorage.getItem("audioPlaying") === "true";
       if (shouldPlay) {
         setIsPlaying(true);
-        // Only play first audio, second will start when first ends
-        firstAudio.play().catch((error) => {
-          console.log("Audio autoplay prevented:", error);
+        // Check if first audio has already ended (then play second)
+        firstAudio.addEventListener("loadedmetadata", () => {
+          if (firstAudio.currentTime >= firstAudio.duration - 0.1) {
+            // First audio already finished, play second audio
+            if (secondAudioRef.current) {
+              secondAudioRef.current.play().catch((error) => {
+                console.log("Second audio autoplay prevented:", error);
+              });
+            }
+          } else {
+            // First audio hasn't finished, resume it
+            firstAudio.play().catch((error) => {
+              console.log("Audio autoplay prevented:", error);
+            });
+          }
         });
       }
 

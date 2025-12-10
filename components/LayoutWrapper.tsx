@@ -18,6 +18,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
 
   const handleClose = () => {
     // Just close the modal, don't start audio
+    // Audio playing state is already cleared in WelcomeModal
   };
 
   return (
