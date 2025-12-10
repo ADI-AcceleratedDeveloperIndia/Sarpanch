@@ -6,7 +6,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FeedbackButton from "@/components/FeedbackButton";
+import LayoutWrapper from "@/components/LayoutWrapper";
 import { LanguageProvider } from "@/components/LanguageProvider";
+import { AudioProvider } from "@/components/AudioProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -39,13 +41,17 @@ export default function RootLayout({
           `}
         </Script>
         <LanguageProvider>
-          <div className="min-h-screen flex flex-col">
-            <Navbar />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-            <WhatsAppButton />
-            <FeedbackButton />
-          </div>
+          <AudioProvider>
+            <LayoutWrapper>
+              <div className="min-h-screen flex flex-col">
+                <Navbar />
+                <main className="flex-grow">{children}</main>
+                <Footer />
+                <WhatsAppButton />
+                <FeedbackButton />
+              </div>
+            </LayoutWrapper>
+          </AudioProvider>
         </LanguageProvider>
       </body>
     </html>
