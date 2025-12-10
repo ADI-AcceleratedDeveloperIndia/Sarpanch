@@ -4,29 +4,71 @@ import { useState, useEffect } from "react";
 import { useLanguage } from "./LanguageProvider";
 import { getText } from "@/lib/data";
 
-interface WelcomeModalProps {
-  onEnter: () => void;
+// Global flag to track if modal was shown in this page load
+declare global {
+  var welcomeModalShown: boolean | undefined;
 }
 
-export default function WelcomeModal({ onEnter }: WelcomeModalProps) {
+interface WelcomeModalProps {
+  onEnter: () => void;
+  onClose: () => void;
+}
+
+export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
   const { lang } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Check if user has already entered
-    const hasEntered = localStorage.getItem("welcomeEntered");
-    if (!hasEntered) {
+    // Show modal on every page load/refresh (not on client-side navigation)
+    // Use global variable to track if shown in this page load
+    if (typeof window !== "undefined" && !window.welcomeModalShown) {
       setIsVisible(true);
+      window.welcomeModalShown = true;
     } else {
-      onEnter(); // Auto-enter if already entered before
+      // If navigating (not refreshing), don't show modal, but resume audio if it was playing
+      const audioPlaying = localStorage.getItem("audioPlaying") === "true";
+      if (audioPlaying) {
+        onEnter();
+      }
     }
+
+    // Clear flag on page unload (refresh)
+    const handleBeforeUnload = () => {
+      if (typeof window !== "undefined") {
+        window.welcomeModalShown = false;
+      }
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
   }, [onEnter]);
 
   const handleEnter = () => {
-    localStorage.setItem("welcomeEntered", "true");
     setIsVisible(false);
     onEnter();
   };
+
+  const handleClose = () => {
+    setIsVisible(false);
+    onClose();
+  };
+
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isVisible) {
+        handleClose();
+      }
+    };
+    if (isVisible) {
+      document.addEventListener("keydown", handleEsc);
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.removeEventListener("keydown", handleEsc);
+      document.body.style.overflow = "unset";
+    };
+  }, [isVisible]);
 
   if (!isVisible) return null;
 
@@ -37,7 +79,16 @@ export default function WelcomeModal({ onEnter }: WelcomeModalProps) {
       aria-modal="true"
       aria-labelledby="welcome-modal-title"
     >
-      <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-8 text-center">
+      <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-8 text-center relative">
+        {/* Close button */}
+        <button
+          onClick={handleClose}
+          className="absolute top-4 right-4 text-earth-400 hover:text-earth-600 text-2xl font-bold transition-colors"
+          aria-label={getText("common.ariaClose", lang)}
+        >
+          ×
+        </button>
+
         <h1
           id="welcome-modal-title"
           className="text-4xl md:text-5xl font-bold text-primary-600 mb-6"
@@ -50,13 +101,22 @@ export default function WelcomeModal({ onEnter }: WelcomeModalProps) {
             ? "రామారంపేట గ్రామ పోర్టల్‌కు స్వాగతం"
             : "Welcome to Ramarampeta Village Portal"}
         </p>
-        <button
-          onClick={handleEnter}
-          className="w-full bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-          aria-label={lang === "te" ? "ప్రవేశించండి" : "Enter"}
-        >
-          {lang === "te" ? "ప్రవేశించండి" : "Enter"}
-        </button>
+        <div className="flex gap-4">
+          <button
+            onClick={handleClose}
+            className="flex-1 bg-earth-200 hover:bg-earth-300 text-earth-900 px-6 py-3 rounded-lg font-semibold text-base shadow-md hover:shadow-lg transition-all duration-300"
+            aria-label={getText("common.close", lang)}
+          >
+            {getText("common.close", lang)}
+          </button>
+          <button
+            onClick={handleEnter}
+            className="flex-1 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            aria-label={lang === "te" ? "ప్రవేశించండి" : "Enter"}
+          >
+            {lang === "te" ? "ప్రవేశించండి" : "Enter"}
+          </button>
+        </div>
       </div>
     </div>
   );
