@@ -4,10 +4,12 @@ import { useState } from "react";
 import { useLanguage } from "./LanguageProvider";
 import { getText } from "@/lib/data";
 import FeedbackModal from "./FeedbackModal";
+import { useAudio } from "./AudioProvider";
 
 export default function FeedbackButton() {
   const { lang } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
+  const { stopAudio } = useAudio();
 
   return (
     <>
@@ -37,7 +39,10 @@ export default function FeedbackButton() {
           </div>
           
           <button
-            onClick={() => setIsOpen(true)}
+            onClick={() => {
+              stopAudio(); // Stop audio when feedback button is clicked
+              setIsOpen(true);
+            }}
             className="relative z-10 w-full h-full rounded-full text-white shadow-2xl transition-all duration-300 flex items-center justify-center gradient-shine hover:scale-105"
             style={{
               background: "linear-gradient(135deg, #818cf8 0%, #6366f1 30%, #4f46e5 60%, #4338ca 100%)",

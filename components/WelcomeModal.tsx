@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "./LanguageProvider";
 import { getText } from "@/lib/data";
+import { useAudio } from "./AudioProvider";
 
 // Global flag to track if modal was shown in this page load
 declare global {
@@ -16,7 +17,9 @@ interface WelcomeModalProps {
 
 export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
   const { lang } = useLanguage();
+  const { stopAudio } = useAudio();
   const [isVisible, setIsVisible] = useState(false);
+  const [showCloseButton, setShowCloseButton] = useState(false);
 
   useEffect(() => {
     // Show modal on every page load/refresh (not on client-side navigation)
@@ -24,6 +27,10 @@ export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
     if (typeof window !== "undefined" && !window.welcomeModalShown) {
       setIsVisible(true);
       window.welcomeModalShown = true;
+      
+      // Check if this is the first time (no localStorage entry for welcomeModalShownBefore)
+      const hasShownBefore = localStorage.getItem("welcomeModalShownBefore") === "true";
+      setShowCloseButton(hasShownBefore);
     }
     // Don't auto-start audio when navigating - audio will resume automatically via AudioProvider
 
@@ -41,14 +48,16 @@ export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
 
   const handleEnter = () => {
     setIsVisible(false);
+    // Mark that modal has been shown before
+    localStorage.setItem("welcomeModalShownBefore", "true");
     onEnter();
   };
 
   const handleClose = () => {
     setIsVisible(false);
     onClose();
-    // Clear any audio playing state when X is clicked
-    localStorage.setItem("audioPlaying", "false");
+    // Stop audio when X is clicked
+    stopAudio();
   };
 
   useEffect(() => {
@@ -77,14 +86,16 @@ export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
       aria-labelledby="welcome-modal-title"
     >
       <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-8 text-center relative">
-        {/* Close button */}
-        <button
-          onClick={handleClose}
-          className="absolute top-4 right-4 text-earth-400 hover:text-earth-600 text-2xl font-bold transition-colors"
-          aria-label={getText("common.ariaClose", lang)}
-        >
-          ×
-        </button>
+        {/* Close button - only show if modal has been shown before */}
+        {showCloseButton && (
+          <button
+            onClick={handleClose}
+            className="absolute top-4 right-4 text-earth-400 hover:text-earth-600 text-2xl font-bold transition-colors"
+            aria-label={getText("common.ariaClose", lang)}
+          >
+            ×
+          </button>
+        )}
 
         <h1
           id="welcome-modal-title"

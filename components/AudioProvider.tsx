@@ -18,6 +18,17 @@ export function AudioProvider({ children }: { children: ReactNode }) {
   // Initialize audio elements
   useEffect(() => {
     if (typeof window !== "undefined") {
+      // Clear audio playing state on every page load/refresh
+      // Audio should only play when Enter button is explicitly clicked
+      // This ensures audio stops on page refresh
+      localStorage.setItem("audioPlaying", "false");
+      
+      // Set up cleanup on page unload to ensure audio stops on refresh
+      const handleBeforeUnload = () => {
+        localStorage.setItem("audioPlaying", "false");
+      };
+      window.addEventListener("beforeunload", handleBeforeUnload);
+      
       // First audio (gramamwebaudio.mp3) - plays once, then triggers second audio
       const firstAudio = new Audio("/gramamwebaudio.mp3");
       firstAudio.preload = "auto";
@@ -47,31 +58,8 @@ export function AudioProvider({ children }: { children: ReactNode }) {
 
       firstAudio.addEventListener("ended", handleFirstAudioEnd);
 
-      // Check if audio should be playing from localStorage
-      // Only auto-resume if user explicitly clicked "Enter" before
-      const shouldPlay = localStorage.getItem("audioPlaying") === "true";
-      if (shouldPlay) {
-        setIsPlaying(true);
-        // Check if first audio has already ended (then play second)
-        firstAudio.addEventListener("loadedmetadata", () => {
-          if (firstAudio.currentTime >= firstAudio.duration - 0.1 || firstAudio.ended) {
-            // First audio already finished, play second audio
-            if (secondAudioRef.current) {
-              secondAudioRef.current.currentTime = 0; // Start from beginning
-              secondAudioRef.current.play().catch((error) => {
-                console.log("Second audio autoplay prevented:", error);
-              });
-            }
-          } else {
-            // First audio hasn't finished, resume it (don't play second audio yet)
-            firstAudio.play().catch((error) => {
-              console.log("Audio autoplay prevented:", error);
-            });
-          }
-        });
-      }
-
       return () => {
+        window.removeEventListener("beforeunload", handleBeforeUnload);
         firstAudio.removeEventListener("ended", handleFirstAudioEnd);
         if (firstAudioRef.current) {
           firstAudioRef.current.pause();
