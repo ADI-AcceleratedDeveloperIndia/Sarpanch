@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import FeedbackButton from "@/components/FeedbackButton";
 import { LanguageProvider } from "@/components/LanguageProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -43,6 +44,7 @@ export default function RootLayout({
             <main className="flex-grow">{children}</main>
             <Footer />
             <WhatsAppButton />
+            <FeedbackButton />
           </div>
         </LanguageProvider>
       </body>
