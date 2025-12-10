@@ -103,7 +103,12 @@ export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
         </p>
         <button
           onClick={handleEnter}
-          className="w-full bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          className="w-full text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 gradient-shine"
+          style={{
+            background: "linear-gradient(135deg, #818cf8 0%, #6366f1 30%, #4f46e5 60%, #4338ca 100%)",
+            backgroundSize: "200% 200%",
+            animation: "gradient-shift 3s ease infinite",
+          }}
           aria-label={lang === "te" ? "ప్రవేశించండి" : "Enter"}
         >
           {lang === "te" ? "ప్రవేశించండి" : "Enter"}

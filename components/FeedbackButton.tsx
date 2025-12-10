@@ -14,9 +14,18 @@ export default function FeedbackButton() {
       <div className="fixed bottom-20 sm:bottom-24 right-4 sm:right-6 z-40 flex flex-col items-end group">
         
         {/* Desktop tooltip - appears on hover */}
-        <div className="mb-2 hidden sm:block bg-primary-600 text-white px-3 py-1.5 rounded-lg shadow-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none relative">
+        <div 
+          className="mb-2 hidden sm:block text-white px-3 py-1.5 rounded-lg shadow-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none relative"
+          style={{
+            background: "linear-gradient(135deg, #818cf8 0%, #6366f1 50%, #4f46e5 100%)",
+            boxShadow: "0 4px 15px rgba(99, 102, 241, 0.5)",
+          }}
+        >
           {getText("feedback.buttonText", lang)}
-          <div className="absolute -bottom-1 right-6 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-transparent border-t-primary-600"></div>
+          <div 
+            className="absolute -bottom-1 right-6 w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-transparent"
+            style={{ borderTopColor: "#4f46e5" }}
+          ></div>
         </div>
 
         {/* Feedback Button with pulsing rings behind it */}
@@ -29,9 +38,12 @@ export default function FeedbackButton() {
           
           <button
             onClick={() => setIsOpen(true)}
-            className="relative z-10 w-full h-full rounded-full bg-primary-500 hover:bg-primary-600 active:bg-primary-700 text-white shadow-2xl hover:shadow-primary-500/50 transition-all duration-300 flex items-center justify-center"
+            className="relative z-10 w-full h-full rounded-full text-white shadow-2xl transition-all duration-300 flex items-center justify-center gradient-shine hover:scale-105"
             style={{
-              boxShadow: "0 0 20px rgba(236, 72, 153, 0.6), 0 0 40px rgba(236, 72, 153, 0.4), 0 4px 6px rgba(0, 0, 0, 0.1)",
+              background: "linear-gradient(135deg, #818cf8 0%, #6366f1 30%, #4f46e5 60%, #4338ca 100%)",
+              backgroundSize: "200% 200%",
+              animation: "gradient-shift 3s ease infinite",
+              boxShadow: "0 0 25px rgba(99, 102, 241, 0.7), 0 0 50px rgba(99, 102, 241, 0.5), 0 0 75px rgba(129, 140, 248, 0.3), 0 4px 6px rgba(0, 0, 0, 0.1)",
             }}
             aria-label={getText("feedback.buttonText", lang)}
             title={getText("feedback.buttonText", lang)}
@@ -55,7 +67,13 @@ export default function FeedbackButton() {
         </div>
 
         {/* Mobile label - always visible on mobile */}
-        <div className="mt-2 sm:hidden bg-primary-600 text-white px-2.5 py-1 rounded-lg text-xs font-medium shadow-md whitespace-nowrap">
+        <div 
+          className="mt-2 sm:hidden text-white px-2.5 py-1 rounded-lg text-xs font-medium shadow-md whitespace-nowrap"
+          style={{
+            background: "linear-gradient(135deg, #818cf8 0%, #6366f1 50%, #4f46e5 100%)",
+            boxShadow: "0 2px 10px rgba(99, 102, 241, 0.4)",
+          }}
+        >
           {getText("feedback.buttonText", lang)}
         </div>
       </div>

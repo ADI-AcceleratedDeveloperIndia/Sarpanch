@@ -9,7 +9,7 @@ export function generateMetadata(lang: "en" | "te" = "en"): Metadata {
     title: data.meta[`title_${langKey}`],
     description: data.meta[`description_${langKey}`],
     viewport: "width=device-width, initial-scale=1",
-    themeColor: "#ec4899",
+    themeColor: "#6366f1",
     openGraph: {
       title: data.meta[`title_${langKey}`],
       description: data.meta[`description_${langKey}`],

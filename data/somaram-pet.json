@@ -33,14 +33,14 @@
     "subtitle_en": "Welcome to the Ramarampeta community portal — news, updates and stories from our people.",
     "subtitle_te": "రామారంపేట కమ్యూనిటీ పోర్టల్‌కు స్వాగతం — మా ఊరి వార్తలు, పనుల నవీకరణలు మరియు ప్రజల కథలు.",
     "sarpanch": {
-      "name_en": "Sarpanch [Name]",
-      "name_te": "సర్పంచ్ [పేరు]",
+      "name_en": "Ramalakshmi",
+      "name_te": "రామలక్ష్మి",
       "message_en": "I am honored to serve Ramarampeta. Please reach out with your suggestions and concerns.",
       "message_te": "రామారంపేట‌కు సేవ చేయడం నాకు గౌరవం. సూచనలు, సమస్యలు వుంటే చెప్పండి."
     },
     "actingLeader": {
-      "name_en": "Village Guide [Name]",
-      "name_te": "గ్రామ మార్గదర్శి [పేరు]"
+      "name_en": "Ramayya",
+      "name_te": "రామయ్య"
     },
     "quickStats_en": "Population: 1,800 • Households: 420 • Wards: 10",
     "quickStats_te": "జనాభా: 1,800 • ఇళ్లు: 420 • వార్డులు: 10"
@@ -56,22 +56,22 @@
     "pageTitle_te": "గ్రామ నాయకత్వం",
     "sarpanchCard_en": {
       "title": "Sarpanch",
-      "name": "Sarpanch [Name]",
+      "name": "Ramalakshmi",
       "message": "I will work for our village's progress. Contact me for local issues and ideas."
     },
     "sarpanchCard_te": {
       "title": "సర్పంచ్",
-      "name": "సర్పంచ్ [పేరు]",
+      "name": "రామలక్ష్మి",
       "message": "మన ఊరు అభివృద్ధికి నేను పని చేస్తాను. సమస్యలు, సూచనలు ఉంటే సంప్రదించండి."
     },
     "actingCard_en": {
       "title": "Acting Leader",
-      "name": "Village Guide [Name]",
+      "name": "Ramayya",
       "desc": "Popular local contact for immediate help."
     },
     "actingCard_te": {
       "title": "గ్రామ మార్గదర్శి",
-      "name": "గ్రామ మార్గదర్శి [పేరు]",
+      "name": "రామయ్య",
       "desc": "ఎప్పుడైనా వెంటనే సహాయం కోసం సంప్రదించుకునే వ్యక్తి."
     },
     "wardIntro_en": "Click a ward member to view profile and contact.",
@@ -159,7 +159,7 @@
     "contactInformation_en": "Contact Information",
     "contactInformation_te": "సంప్రదింపు వివరాలు",
     "sarpanch_en": "Sarpanch: [Name]",
-    "sarpanch_te": "సర్పంచ్: [పేరు]",
+    "sarpanch_te": "సర్పంచ్: రామలక్ష్మి",
     "whatsapp_en": "WhatsApp / Phone: +91 95050 09699",
     "whatsapp_te": "వాట్సాప్ / ఫోన్: +91 95050 09699",
     "officeHours_en": "Office Hours: 10:00 AM – 4:00 PM (Mon–Sat)",

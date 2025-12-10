@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Ramarampeta — Village Portal",
   description: "Ramarampeta village portal — news, leadership, development updates, gallery and contact.",
   viewport: "width=device-width, initial-scale=1",
-  themeColor: "#ec4899",
+  themeColor: "#6366f1",
 };
 
 export default function RootLayout({

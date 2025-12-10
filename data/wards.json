@@ -2,80 +2,80 @@
   "wards": [
     {
       "id": 1,
-      "memberName_en": "Ward Member 1",
-      "memberName_te": "వార్డు సభ్యుడు 1",
+      "memberName_en": "Kavitha",
+      "memberName_te": "కవిత",
       "about_en": "Information about Ward 1 will be added here.",
       "about_te": "వార్డు 1 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward1.png"
     },
     {
       "id": 2,
-      "memberName_en": "Ward Member 2",
-      "memberName_te": "వార్డు సభ్యుడు 2",
+      "memberName_en": "Ramesh",
+      "memberName_te": "రమేష్",
       "about_en": "Information about Ward 2 will be added here.",
       "about_te": "వార్డు 2 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward2.png"
     },
     {
       "id": 3,
-      "memberName_en": "Ward Member 3",
-      "memberName_te": "వార్డు సభ్యుడు 3",
+      "memberName_en": "Lakshmi",
+      "memberName_te": "లక్ష్మి",
       "about_en": "Information about Ward 3 will be added here.",
       "about_te": "వార్డు 3 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward3.png"
     },
     {
       "id": 4,
-      "memberName_en": "Ward Member 4",
-      "memberName_te": "వార్డు సభ్యుడు 4",
+      "memberName_en": "Suresh",
+      "memberName_te": "సురేష్",
       "about_en": "Information about Ward 4 will be added here.",
       "about_te": "వార్డు 4 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward4.png"
     },
     {
       "id": 5,
-      "memberName_en": "Ward Member 5",
-      "memberName_te": "వార్డు సభ్యుడు 5",
+      "memberName_en": "Swathi",
+      "memberName_te": "స్వాతి",
       "about_en": "Information about Ward 5 will be added here.",
       "about_te": "వార్డు 5 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward5.png"
     },
     {
       "id": 6,
-      "memberName_en": "Ward Member 6",
-      "memberName_te": "వార్డు సభ్యుడు 6",
+      "memberName_en": "Venkatesh",
+      "memberName_te": "వెంకటేష్",
       "about_en": "Information about Ward 6 will be added here.",
       "about_te": "వార్డు 6 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward6.png"
     },
     {
       "id": 7,
-      "memberName_en": "Ward Member 7",
-      "memberName_te": "వార్డు సభ్యుడు 7",
+      "memberName_en": "Anitha",
+      "memberName_te": "అనిత",
       "about_en": "Information about Ward 7 will be added here.",
       "about_te": "వార్డు 7 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward7.png"
     },
     {
       "id": 8,
-      "memberName_en": "Ward Member 8",
-      "memberName_te": "వార్డు సభ్యుడు 8",
+      "memberName_en": "Ganesh",
+      "memberName_te": "గణేష్",
       "about_en": "Information about Ward 8 will be added here.",
       "about_te": "వార్డు 8 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward8.png"
     },
     {
       "id": 9,
-      "memberName_en": "Ward Member 9",
-      "memberName_te": "వార్డు సభ్యుడు 9",
+      "memberName_en": "Madhavi",
+      "memberName_te": "మాధవి",
       "about_en": "Information about Ward 9 will be added here.",
       "about_te": "వార్డు 9 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward9.png"
     },
     {
       "id": 10,
-      "memberName_en": "Ward Member 10",
-      "memberName_te": "వార్డు సభ్యుడు 10",
+      "memberName_en": "Praveen",
+      "memberName_te": "ప్రవీణ్",
       "about_en": "Information about Ward 10 will be added here.",
       "about_te": "వార్డు 10 గురించి సమాచారం ఇక్కడ జోడించబడుతుంది.",
       "photo": "/photos/ward10.png"

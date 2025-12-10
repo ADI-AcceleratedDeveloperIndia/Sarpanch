@@ -303,7 +303,13 @@ export default function FeedbackModal({ isOpen, onClose }: FeedbackModalProps) {
                 <button
                   type="submit"
                   disabled={submitting || !ideaWork}
-                  className="flex-1 px-6 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="flex-1 px-6 py-3 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all hover:scale-105"
+                  style={{
+                    background: "linear-gradient(135deg, #818cf8 0%, #6366f1 30%, #4f46e5 60%, #4338ca 100%)",
+                    backgroundSize: "200% 200%",
+                    animation: "gradient-shift 3s ease infinite",
+                    boxShadow: "0 4px 15px rgba(99, 102, 241, 0.4)",
+                  }}
                 >
                   {submitting ? getText("feedback.submitting", lang) : getText("feedback.submitButton", lang)}
                 </button>
