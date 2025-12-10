@@ -14,7 +14,7 @@ export default function HomePage() {
   const sarpanchPhoto = "/photos/sarpanch.png";
   const sarpanchHusbandPhoto = "/photos/sarpanchhusband.png";
 
-  // Approximate coordinates for Somarampet, Illanthakunta
+  // Approximate coordinates for Ramarampeta
   // TODO: Update with exact coordinates
   const villageLat = 16.5;
   const villageLon = 78.5;

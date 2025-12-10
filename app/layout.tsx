@@ -11,8 +11,8 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Somarampet — Village Portal",
-  description: "Somarampet village portal — news, leadership, development updates, gallery and contact.",
+  title: "Ramarampeta — Village Portal",
+  description: "Ramarampeta village portal — news, leadership, development updates, gallery and contact.",
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#ec4899",
 };

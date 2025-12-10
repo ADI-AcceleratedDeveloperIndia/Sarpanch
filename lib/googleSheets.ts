@@ -23,13 +23,23 @@ interface FeedbackData {
 }
 
 export async function saveToGoogleSheets(data: FeedbackData): Promise<void> {
-  const privateKey = process.env.GOOGLE_SHEETS_PRIVATE_KEY?.replace(/\\n/g, "\n");
+  let privateKey = process.env.GOOGLE_SHEETS_PRIVATE_KEY;
   const clientEmail = process.env.GOOGLE_SHEETS_CLIENT_EMAIL;
   const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
 
   if (!privateKey || !clientEmail || !spreadsheetId) {
     console.warn("Google Sheets credentials not configured. Skipping save to sheets.");
     return;
+  }
+
+  // Handle different formats of private key
+  // Replace escaped newlines with actual newlines
+  privateKey = privateKey.replace(/\\n/g, "\n");
+  
+  // If the key doesn't start with BEGIN, it might be missing the markers
+  if (!privateKey.includes("BEGIN PRIVATE KEY")) {
+    console.error("Private key format error: Missing BEGIN PRIVATE KEY marker");
+    throw new Error("Invalid private key format");
   }
 
   try {

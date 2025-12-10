@@ -1,12 +1,11 @@
 {
   "siteId": "somaram-pet",
-  "village": { "en": "Somarampet", "te": "సోమారంపేట్" },
-  "mandal": { "en": "Illanthakunta", "te": "ఇల్లంతకుంట" },
+  "village": { "en": "Ramarampeta", "te": "రామారంపేట" },
   "meta": {
-    "title_en": "Somarampet — Village Portal (Demo)",
-    "title_te": "సోమారంపేట్ — మా ఊరు (డెమో)",
-    "description_en": "Somarampet — village news, leadership, development updates, gallery and contact.",
-    "description_te": "సోమారంపేట్ — గ్రామ వార్తలు, నాయకత్వం, అభివృద్ధి వివరాలు, ఫోటోలు మరియు సంప్రదింపుల వివరాలు."
+    "title_en": "Ramarampeta — Village Portal (Demo)",
+    "title_te": "రామారంపేట — మా ఊరు (డెమో)",
+    "description_en": "Ramarampeta — village news, leadership, development updates, gallery and contact.",
+    "description_te": "రామారంపేట — గ్రామ వార్తలు, నాయకత్వం, అభివృద్ధి వివరాలు, ఫోటోలు మరియు సంప్రదింపుల వివరాలు."
   },
   "nav": {
     "home_en": "Home",
@@ -29,15 +28,15 @@
     "weather_te": "వాతావరణ వివరాలు"
   },
   "hero": {
-    "title_en": "Somarampet — Our Village, Our Pride",
-    "title_te": "సోమారంపేట్ — మన ఊరు, మన గౌరవం",
-    "subtitle_en": "Welcome to the Somarampet community portal — news, updates and stories from our people.",
-    "subtitle_te": "సోమారంపేట్ కమ్యూనిటీ పోర్టల్‌కు స్వాగతం — మా ఊరి వార్తలు, పనుల నవీకరణలు మరియు ప్రజల కథలు.",
+    "title_en": "Ramarampeta — Our Village, Our Pride",
+    "title_te": "రామారంపేట — మన ఊరు, మన గౌరవం",
+    "subtitle_en": "Welcome to the Ramarampeta community portal — news, updates and stories from our people.",
+    "subtitle_te": "రామారంపేట కమ్యూనిటీ పోర్టల్‌కు స్వాగతం — మా ఊరి వార్తలు, పనుల నవీకరణలు మరియు ప్రజల కథలు.",
     "sarpanch": {
       "name_en": "Sarpanch [Name]",
       "name_te": "సర్పంచ్ [పేరు]",
-      "message_en": "I am honored to serve Somarampet. Please reach out with your suggestions and concerns.",
-      "message_te": "సోమారంపేట్‌కు సేవ చేయడం నాకు గౌరవం. సూచనలు, సమస్యలు వుంటే చెప్పండి."
+      "message_en": "I am honored to serve Ramarampeta. Please reach out with your suggestions and concerns.",
+      "message_te": "రామారంపేట‌కు సేవ చేయడం నాకు గౌరవం. సూచనలు, సమస్యలు వుంటే చెప్పండి."
     },
     "actingLeader": {
       "name_en": "Village Guide [Name]",
@@ -47,10 +46,10 @@
     "quickStats_te": "జనాభా: 1,800 • ఇళ్లు: 420 • వార్డులు: 10"
   },
   "homeContent": {
-    "intro_en": "Somarampet is a close-knit community with strong traditions. This site shares village news, development updates and contact information for the Panchayat leaders.",
-    "intro_te": "సోమారంపేట్ ఒక కలిసికట్టైన ఊరు. ఈ సైట్ లో గ్రామ వార్తలు, అభివృద్ధి వివరాలు మరియు సర్పంచ్/వార్డు సభ్యుల సంప్రదింపులు ఉంటాయి.",
-    "mapCta_en": "Locate Somarampet on Google Maps",
-    "mapCta_te": "సోమారంపేట్‌ని Google మ్యాప్స్‌లో చూడండి"
+    "intro_en": "Ramarampeta is a close-knit community with strong traditions. This site shares village news, development updates and contact information for the Panchayat leaders.",
+    "intro_te": "రామారంపేట ఒక కలిసికట్టైన ఊరు. ఈ సైట్ లో గ్రామ వార్తలు, అభివృద్ధి వివరాలు మరియు సర్పంచ్/వార్డు సభ్యుల సంప్రదింపులు ఉంటాయి.",
+    "mapCta_en": "Locate Ramarampeta on Google Maps",
+    "mapCta_te": "రామారంపేట‌ని Google మ్యాప్స్‌లో చూడండి"
   },
   "leadershipPage": {
     "pageTitle_en": "Village Leadership",
@@ -85,8 +84,8 @@
   "worksPage": {
     "pageTitle_en": "Development Works",
     "pageTitle_te": "అభివృద్ధి పనులు",
-    "intro_en": "This page lists ongoing and completed projects in Somarampet — roads, water, sanitation, and school improvements. We update progress regularly.",
-    "intro_te": "ఈ పేజీలో సోమారంపేట్‌లో జరుగుతున్న మరియు పూర్తైన పనులు చూపిస్తాం — రహదారులు, నీటి పనులు, శౌచాలయాలు, పాఠశాల పనులు. పనుల ప్రగతిని ఇక్కడ అప్‌డేట్ చేస్తాం.",
+    "intro_en": "This page lists ongoing and completed projects in Ramarampeta — roads, water, sanitation, and school improvements. We update progress regularly.",
+    "intro_te": "ఈ పేజీలో రామారంపేట‌లో జరుగుతున్న మరియు పూర్తైన పనులు చూపిస్తాం — రహదారులు, నీటి పనులు, శౌచాలయాలు, పాఠశాల పనులు. పనుల ప్రగతిని ఇక్కడ అప్‌డేట్ చేస్తాం.",
     "ongoingWorks_en": "Ongoing Works",
     "ongoingWorks_te": "జరుగుతున్న పనులు",
     "completedWorks_en": "Completed Works",
@@ -115,8 +114,8 @@
   "galleryPage": {
     "pageTitle_en": "Photo & Video Gallery",
     "pageTitle_te": "ఫోటోలు & వీడియోలు",
-    "intro_en": "A visual tour of Somarampet — festivals, people, schools and development activities.",
-    "intro_te": "సోమారంపేట్ యొక్క విజువల్ టూర్ — పండుగలు, ప్రజలు, పాఠశాలలు మరియు అభివృద్ధి కార్యక్రమాలు.",
+    "intro_en": "A visual tour of Ramarampeta — festivals, people, schools and development activities.",
+    "intro_te": "రామారంపేట యొక్క విజువల్ టూర్ — పండుగలు, ప్రజలు, పాఠశాలలు మరియు అభివృద్ధి కార్యక్రమాలు.",
     "photos_en": "Photos",
     "photos_te": "ఫోటోలు",
     "videos_en": "Videos",
@@ -133,8 +132,8 @@
   "historyPage": {
     "pageTitle_en": "History & Culture",
     "pageTitle_te": "చరిత్ర & సంస్కృతి",
-    "content_en": "Somarampet has deep traditions. Our festivals, temples and farming heritage have shaped village life for generations. We celebrate Sankranti, local temple festivals and community events every year.",
-    "content_te": "సోమారంపేట్‌కు పాత సంప్రదాయాలు ఉన్నవి. సంక్రాంతి, స్థానిక ఆలయ పండుగలు మరియు వ్యవసాయ వారసత్వం వల్ల గ్రామ జీవితం రూపొందినది. ప్రతి సంవత్సరం పండుగలు మరియు సంఘ కార్యక్రమాలు జరుపుకుంటాము."
+    "content_en": "Ramarampeta has deep traditions. Our festivals, temples and farming heritage have shaped village life for generations. We celebrate Sankranti, local temple festivals and community events every year.",
+    "content_te": "రామారంపేట‌కు పాత సంప్రదాయాలు ఉన్నవి. సంక్రాంతి, స్థానిక ఆలయ పండుగలు మరియు వ్యవసాయ వారసత్వం వల్ల గ్రామ జీవితం రూపొందినది. ప్రతి సంవత్సరం పండుగలు మరియు సంఘ కార్యక్రమాలు జరుపుకుంటాము."
   },
   "announcementsPage": {
     "pageTitle_en": "Announcements & Notices",
@@ -178,7 +177,7 @@
     "location_en": "Location",
     "location_te": "స్థానం",
     "mapEmbed": "GOOGLE_MAPS_EMBED_PLACEHOLDER",
-    "mapSearch": "https://www.google.com/maps/search/?api=1&query=Somarampet+Illanthakunta",
+    "mapSearch": "https://www.google.com/maps/search/?api=1&query=Ramarampeta",
     "mapPlaceholder_en": "Map placeholder — update mapEmbed in data/somaram-pet.json",
     "mapPlaceholder_te": "మ్యాప్ ప్లేస్‌హోల్డర్ — data/somaram-pet.json లో mapEmbed మార్చండి",
     "formPlaceholder_en": "Send a message — we will reply within 48 hours.",
