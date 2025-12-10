@@ -101,22 +101,13 @@ export default function WelcomeModal({ onEnter, onClose }: WelcomeModalProps) {
             ? "రామారంపేట గ్రామ పోర్టల్‌కు స్వాగతం"
             : "Welcome to Ramarampeta Village Portal"}
         </p>
-        <div className="flex gap-4">
-          <button
-            onClick={handleClose}
-            className="flex-1 bg-earth-200 hover:bg-earth-300 text-earth-900 px-6 py-3 rounded-lg font-semibold text-base shadow-md hover:shadow-lg transition-all duration-300"
-            aria-label={getText("common.close", lang)}
-          >
-            {getText("common.close", lang)}
-          </button>
-          <button
-            onClick={handleEnter}
-            className="flex-1 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            aria-label={lang === "te" ? "ప్రవేశించండి" : "Enter"}
-          >
-            {lang === "te" ? "ప్రవేశించండి" : "Enter"}
-          </button>
-        </div>
+        <button
+          onClick={handleEnter}
+          className="w-full bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          aria-label={lang === "te" ? "ప్రవేశించండి" : "Enter"}
+        >
+          {lang === "te" ? "ప్రవేశించండి" : "Enter"}
+        </button>
       </div>
     </div>
   );
